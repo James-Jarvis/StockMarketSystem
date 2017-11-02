@@ -6,7 +6,7 @@ public class StockMarket implements Runnable
 
     private static StockMarket ref;
     private String[][] stockData; 
-    private String filename = "stocks.csv";
+    private String filename = "C:\\Users\\Jarvi\\Desktop\\Git\\StockMarketSystem\\Server\\src\\stocks.csv";
     private String delims = ",";
     private String[] tokens;
 

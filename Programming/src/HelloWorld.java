@@ -1,9 +1,7 @@
 import java.util.*;
 
 public class HelloWorld extends Thread {
-
     int name;
-
     Random rnd = new Random();
 
     public HelloWorld (int nm) {
@@ -15,5 +13,4 @@ public class HelloWorld extends Thread {
             System.out.println("I am Program " + name + ": " + rnd.nextInt(40));
         }
     }
-
 }
