@@ -4,6 +4,8 @@ import java.io.*;
 public class STSServer 
 {
 
+    int port = 5000;
+
     protected ServerSocket STSSocket = null;
     public StockMarket mySM;
 
@@ -23,8 +25,9 @@ public class STSServer
     {
         try
         {
-            STSSocket = new ServerSocket(5000);
-            
+            STSSocket = new ServerSocket(port);
+            System.out.println("local IP: " + STSSocket.getChannel());
+
             while(true)
             {
                 System.out.println("Listening for connections from Client.\n");
@@ -40,6 +43,8 @@ public class STSServer
 
     public static void main(String [] args)
     {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         STSServer mySTS = new STSServer();
         mySTS.initSTS();
         mySTS.listenForClients();
