@@ -9,7 +9,7 @@ public class Gen {
         Thread sendThread = new Thread(sendCon);
         Thread recThread = new Thread(receiveCon);
 
-        recThread.start();
+        //recThread.start();
         sendThread.start();
 
     }

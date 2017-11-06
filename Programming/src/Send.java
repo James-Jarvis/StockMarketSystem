@@ -14,8 +14,18 @@ public class Send extends Thread{
             System.out.println(ClientSocket.getRemoteSocketAddress());
 
             PrintWriter out = new PrintWriter(ClientSocket.getOutputStream(), true);
+            BufferedReader in = new BufferedReader(new InputStreamReader(ClientSocket.getInputStream()));
+            BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
 
-            out.println("HELO");
+            out.println("HELP");
+
+            String userInput = in.readLine();
+
+            System.out.println(userInput);
+
+            while ((userInput = in.readLine()) != null) {
+                System.out.println(userInput);
+            }
 
             System.out.println("s--");
 
