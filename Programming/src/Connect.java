@@ -11,7 +11,8 @@ public class Connect extends Thread {
     public void run() {
         try {
             Socket ClientSocket;
-            ClientSocket = new Socket("10.5.34.41", 5000);
+            ClientSocket = new Socket("localhost", 5000);
+            System.out.println(ClientSocket.getRemoteSocketAddress());
 
             PrintWriter out = new PrintWriter(ClientSocket.getOutputStream(), true);
             BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
@@ -20,7 +21,7 @@ public class Connect extends Thread {
             //System.out.println("Connected IP is: " + ClientSocket.getRemoteSocketAddress() + "\n\n");
 
         } catch(IOException e){
-            System.out.println("Problem with socket: " + e);
+            System.out.println("***********Problem with socket: " + e);
         }
 
     }
