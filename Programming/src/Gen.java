@@ -3,14 +3,15 @@ public class Gen {
     public static void main(String[] args) {
         System.out.println("Connecting to socket... fingers crossed!");
 
-        Send sendCon = new Send();
-        Receive receiveCon = new Receive();
+        Connect con = new Connect();
 
-        Thread sendThread = new Thread(sendCon);
-        Thread recThread = new Thread(receiveCon);
+        Thread sendThread = new Thread(con);
 
-        //recThread.start();
         sendThread.start();
+
+
+
+
 
     }
 }
