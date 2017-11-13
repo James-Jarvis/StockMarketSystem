@@ -21,18 +21,14 @@ public class Connect extends Thread {
             BufferedReader in = new BufferedReader(new InputStreamReader(ClientSocket.getInputStream()));
 
             out.println("HELP");
-
+            out.println("EXIT");
 
             String userInput;
-            while ((userInput = in.readLine()) != "") {
+            while ((userInput = in.readLine()) != null) {
                 //out.println(userInput);
 
-                if (userInput != "")
-                    System.out.println("echo: " + userInput);
-                else {
-                    System.out.println("ending");
-                    break;
-                }
+                System.out.println("echo: " + userInput);
+
             }
 
             System.out.println("s--");
