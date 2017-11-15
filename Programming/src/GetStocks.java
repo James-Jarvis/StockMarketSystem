@@ -3,18 +3,30 @@ import java.lang.*;
 import java.io.*;
 import java.net.*;
 
-public class Connect extends Thread {
+public class GetStocks extends Thread {
+
 
     int port;
     String hostname;
+    String userID;
+    boolean successful;
+    Stock[] stocksIndex = new Stock[10];
 
-    public Connect () {
+    public GetStocks (String ip, int newPort, String username) {
+        // Constructor
+        port = newPort;
+        hostname = ip;
+        userID = username;
+        successful = false;
+    }
+    public GetStocks (String username){
+        successful = false;
         hostname = "localhost";
         port = 4200;
+        userID = username;
     }
 
-    public void run () {
-
+    public void run(){
         try {
             Socket ClientSocket;
             //connects to the socket
@@ -30,6 +42,11 @@ public class Connect extends Thread {
             out.println("HELO");
 
             //send the command you need
+            out.println("REGI:"+userID);
+            //out.println(userID);
+            out.println("DISP:1");
+            //out.println("1");
+            //out.println("5");
 
             //end stream
             out.println("EXIT");
@@ -38,9 +55,7 @@ public class Connect extends Thread {
             String userInput;
             while ((userInput = in.readLine()) != null) {
                 //out.println(userInput);
-
                 System.out.println("echo: " + userInput);
-
             }
 
             //done
@@ -49,7 +64,5 @@ public class Connect extends Thread {
         } catch(IOException e){
             System.out.println("***********Problem with socket: " + e);
         }
-
     }
-
 }

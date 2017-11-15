@@ -4,7 +4,7 @@ import java.io.*;
 public class STSServer 
 {
 
-    int port = 5000;
+    int port = 4200;
 
     protected ServerSocket STSSocket = null;
     public StockMarket mySM;

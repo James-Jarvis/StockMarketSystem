@@ -3,14 +3,23 @@ import java.lang.*;
 import java.io.*;
 import java.net.*;
 
-public class Connect extends Thread {
+public class Register extends Thread {
 
     int port;
     String hostname;
+    String userID;
+    boolean successful;
 
-    public Connect () {
-        hostname = "localhost";
-        port = 4200;
+    public Register (String ip, int newPort, String username) {
+        // Constructor
+        port = newPort;
+        hostname = ip;
+        userID = username;
+        successful = false;
+    }
+    public Register (String username){
+        userID = username;
+        successful = false;
     }
 
     public void run () {
@@ -30,6 +39,8 @@ public class Connect extends Thread {
             out.println("HELO");
 
             //send the command you need
+            out.println("REGI");
+            out.println(userID);
 
             //end stream
             out.println("EXIT");
@@ -38,9 +49,11 @@ public class Connect extends Thread {
             String userInput;
             while ((userInput = in.readLine()) != null) {
                 //out.println(userInput);
-
                 System.out.println("echo: " + userInput);
-
+                if(userInput.startsWith("REGI:SUCCESS")){
+                    System.out.println("Registered user "+userID+" successfully.");
+                    successful = true;
+                }
             }
 
             //done
