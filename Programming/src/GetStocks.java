@@ -42,9 +42,9 @@ public class GetStocks extends Thread {
             out.println("HELO");
 
             //send the command you need
-            out.println("REGI:"+userID);
-            //out.println(userID);
-            out.println("DISP:1");
+            out.println("REGI");
+            out.println("DISP");
+
             //out.println("1");
             //out.println("5");
 

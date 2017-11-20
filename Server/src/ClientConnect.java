@@ -62,11 +62,11 @@ class ClientConnect extends Thread
                     out.println("REGI:SUCCESS:"+ID);
                     out.println("");
                     mySMRef.registerUser(ID);
-                    isRegistered = false;
+                    isRegistered = true;
                 }
                 else if(inputText.equals("DISP"))
                 {   // Display Stock Market
-                    if(mySMRef.checkID(tokens[3]))
+                    if(mySMRef.checkID(tokens[1]))
                     {
                         String [][] aStock = mySMRef.getStockMarketState();
                         //objectOut.writeObject(mySMRef.getStockMarketState());
