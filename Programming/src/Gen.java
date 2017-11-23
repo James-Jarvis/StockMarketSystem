@@ -5,6 +5,7 @@ public class Gen {
 
         //Connect con = new Connect();
         //Register reg = new Register("MYUSER");
+        //GetStocks fetch = new GetStocks("MYUSER");
         GetStocks fetch = new GetStocks("MYUSER");
 
         //Thread sendThread = new Thread(con);

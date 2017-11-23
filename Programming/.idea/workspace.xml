@@ -15,18 +15,48 @@
       <file leaf-file-name="Gen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Gen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="200">
+              <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetStocks.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/OneDrive - University of Lincoln/Year 3/Semester A/Software Engineering/Workshops/Client/TestClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientRead.java" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/OneDrive - University of Lincoln/Year 3/Semester A/Software Engineering/Workshops/Client/ClientRead.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetStocks.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GetStocks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="1175">
+              <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Programming.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Programming.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -35,12 +65,11 @@
       <file leaf-file-name="Connect.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Connect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1511180962756" expanded="true" signature="399:1403" ph="{...}" />
-                <marker date="1511180962756" expanded="true" signature="885:938" ph="//..." />
               </folding>
             </state>
           </provider>
@@ -70,8 +99,8 @@
         <option value="$PROJECT_DIR$/src/Register.java" />
         <option value="$PROJECT_DIR$/src/Connect.java" />
         <option value="$PROJECT_DIR$/src/Stock.java" />
-        <option value="$PROJECT_DIR$/src/Gen.java" />
         <option value="$PROJECT_DIR$/src/GetStocks.java" />
+        <option value="$PROJECT_DIR$/src/Gen.java" />
       </list>
     </option>
   </component>
@@ -102,8 +131,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,14 +147,16 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Server" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive - University of Lincoln/Year 3/Semester A/Software Engineering/Workshops/Client/ClientRead.java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -270,7 +299,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.50732064" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4196933" sideWeight="0.49267936" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24132365" sideWeight="0.49267936" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -335,21 +364,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Gen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HelloWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Generator" />
     <entry file="file://$USER_HOME$/Google Drive/programming/Java/helloWorld.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Thread.java" />
@@ -368,13 +382,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Receive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Receive.java" />
     <entry file="file://$PROJECT_DIR$/src/Gen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -383,13 +391,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Send.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Send.java" />
     <entry file="file://$PROJECT_DIR$/src/Connect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -397,7 +399,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1511180962756" expanded="true" signature="399:1403" ph="{...}" />
-            <marker date="1511180962756" expanded="true" signature="885:938" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -418,7 +419,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1511180962756" expanded="true" signature="399:1403" ph="{...}" />
-            <marker date="1511180962756" expanded="true" signature="885:938" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -461,7 +461,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1511180962756" expanded="true" signature="399:1403" ph="{...}" />
-            <marker date="1511180962756" expanded="true" signature="885:938" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -495,7 +494,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1511180962756" expanded="true" signature="399:1403" ph="{...}" />
-            <marker date="1511180962756" expanded="true" signature="885:938" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -529,7 +527,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1511180962756" expanded="true" signature="399:1403" ph="{...}" />
-            <marker date="1511180962756" expanded="true" signature="885:938" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -608,18 +605,6 @@
     <entry file="file://$PROJECT_DIR$/src/Send.java" />
     <entry file="file://$PROJECT_DIR$/src/Stock.java" />
     <entry file="file://$PROJECT_DIR$/src/Buy.java" />
-    <entry file="file://$PROJECT_DIR$/src/Connect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1511180962756" expanded="true" signature="399:1403" ph="{...}" />
-            <marker date="1511180962756" expanded="true" signature="885:938" ph="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Register.java" />
     <entry file="file://$PROJECT_DIR$/Programming.iml">
       <provider selected="true" editor-type-id="text-editor">
@@ -629,18 +614,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gen.java">
+    <entry file="file://$PROJECT_DIR$/src/Connect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="275">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1511180962756" expanded="true" signature="399:1403" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GetStocks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="1175">
+          <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/OneDrive - University of Lincoln/Year 3/Semester A/Software Engineering/Workshops/Client/TestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/OneDrive - University of Lincoln/Year 3/Semester A/Software Engineering/Workshops/Client/ClientRead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
