@@ -22,7 +22,7 @@ public class GetStocks extends Thread {
     public GetStocks (String username){
         successful = false;
         hostname = "localhost";
-        port = 4200;
+        port = 5000;
         userID = username;
     }
 
@@ -34,7 +34,7 @@ public class GetStocks extends Thread {
             System.out.println("Connected to server (send).");
             System.out.println(ClientSocket.getRemoteSocketAddress());
 
-            //sets up the 'send' Printwriter and 'reive' BufferedReader
+            //sets up the 'send' Printwriter and 'receive' BufferedReader
             PrintWriter out = new PrintWriter(ClientSocket.getOutputStream(), true);
             BufferedReader in = new BufferedReader(new InputStreamReader(ClientSocket.getInputStream()));
 
@@ -43,10 +43,8 @@ public class GetStocks extends Thread {
 
             //send the command you need
             out.println("REGI");
-            out.println("DISP");
 
-            //out.println("1");
-            //out.println("5");
+            out.println("DISP:" + userID);
 
             //end stream
             out.println("EXIT");

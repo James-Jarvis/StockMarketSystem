@@ -76,8 +76,8 @@ class ClientConnect extends Thread
 
                     tokens = inputText.split(":");
                     out.println("DEBUG: You entered: DISP");
-                    System.out.println("DEBUG: DISP");
-                    System.out.println("DEBUG: Tokens is: " + tokens.length + " in size -- Value of [1] is: " + tokens[1]);
+                    out.println("DEBUG: DISP");
+                    out.println("DEBUG: Tokens is: " + tokens.length + " in size -- Value of [1] is: " + tokens[1]);
 
                     if(mySMRef.checkID(Integer.parseInt(tokens[1])))
                     {
