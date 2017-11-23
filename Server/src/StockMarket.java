@@ -9,7 +9,7 @@ public class StockMarket implements Runnable
     private String[][] stockData;
     private String[][] stockDataDeltas;
 
-    private String filename = "ftse.csv";
+    private String filename = "C:\\Users\\Neil\\Documents\\Git_SE\\Server\\src\\ftse.csv";
     private String delims = ",";
     private String[] tokens;
 
