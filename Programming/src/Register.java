@@ -9,6 +9,7 @@ public class Register extends Thread {
     String hostname;
     String userID;
     boolean successful;
+    int ID;
 
     public Register (String ip, int newPort, String username) {
         // Constructor
@@ -18,6 +19,8 @@ public class Register extends Thread {
         successful = false;
     }
     public Register (String username){
+        port = 5000;
+        hostname = "localhost";
         userID = username;
         successful = false;
     }
@@ -53,6 +56,8 @@ public class Register extends Thread {
                 if(userInput.startsWith("REGI:SUCCESS")){
                     System.out.println("Registered user "+userID+" successfully.");
                     successful = true;
+                    ID = Integer.parseInt(userInput.split(":")[2]);
+                    System.out.println("ID... " + ID);
                 }
             }
 

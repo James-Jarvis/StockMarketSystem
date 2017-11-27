@@ -29,8 +29,6 @@ public class Connect extends Thread {
             //send aknowledge command
             out.println("HELO");
 
-            //send the command you need
-
             //end stream
             out.println("EXIT");
 
