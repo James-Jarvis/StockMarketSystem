@@ -9,7 +9,9 @@ public class Register extends Thread {
     String hostname;
     String userID;
     boolean successful;
-    String ID;
+    int ID;
+
+    boolean finished;
 
     public Register (String ip, int newPort, String username) {
         // Constructor
@@ -26,7 +28,7 @@ public class Register extends Thread {
     }
 
     public void run () {
-
+        finished = false;
         try {
             Socket ClientSocket;
             //connects to the socket
@@ -34,11 +36,11 @@ public class Register extends Thread {
             System.out.println("Connected to server (send).");
             System.out.println(ClientSocket.getRemoteSocketAddress());
 
-            //sets up the 'send' Printwriter and 'receive' BufferedReader
+            //sets up the 'send' Printwriter and 'reive' BufferedReader
             PrintWriter out = new PrintWriter(ClientSocket.getOutputStream(), true);
             BufferedReader in = new BufferedReader(new InputStreamReader(ClientSocket.getInputStream()));
 
-            //send acknowledge command
+            //send aknowledge command
             out.println("HELO");
 
             //send the command you need
@@ -56,7 +58,7 @@ public class Register extends Thread {
                 if(userInput.startsWith("REGI:SUCCESS")){
                     System.out.println("Registered user "+userID+" successfully.");
                     successful = true;
-                    ID = (userInput.split(":")[2]);
+                    ID = Integer.parseInt(userInput.split(":")[2]);
                     System.out.println("ID... " + ID);
                 }
             }
@@ -67,7 +69,7 @@ public class Register extends Thread {
         } catch(IOException e){
             System.out.println("***********Problem with socket: " + e);
         }
-
+        finished = true;
     }
 
 }
