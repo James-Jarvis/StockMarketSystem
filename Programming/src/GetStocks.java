@@ -42,7 +42,23 @@ public class GetStocks extends Thread {
             out.println("HELO");
 
             //send the command you need
-            //out.println("REGI");
+            out.println("REGI");
+            //gets the return from the socket
+            String userInput;
+            while ((userInput = in.readLine()) != null) {
+                //out.println(userInput);
+                System.out.println("echo: " + userInput);
+                if(userInput.startsWith("REGI:SUCCESS")){
+                    System.out.println("Registered user " + userID + " successfully.");
+                    successful = true;
+                    userID = "";
+                    userID = (userInput.split(":")[2]);
+                    System.out.println("ID... " + userID);
+                }
+                if (successful == true){
+                    break;
+                }
+            }
 
             out.println("DISP:" + userID);
 
@@ -50,11 +66,11 @@ public class GetStocks extends Thread {
             out.println("EXIT");
 
             //gets the return from the socket
-            String userInput;
-            while ((userInput = in.readLine()) != null) {
-                //out.println(userInput);
-                System.out.println("echo: " + userInput);
-            }
+            //String userInput;
+            //while ((userInput = in.readLine()) != null) {
+            //    //out.println(userInput);
+            //    System.out.println("echo: " + userInput);
+            //}
 
             //done
             System.out.println("s--");
