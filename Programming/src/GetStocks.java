@@ -67,10 +67,10 @@ public class GetStocks extends Thread {
 
             //gets the return from the socket
             //String userInput;
-            //while ((userInput = in.readLine()) != null) {
-            //    //out.println(userInput);
-            //    System.out.println("echo: " + userInput);
-            //}
+            while ((userInput = in.readLine()) != null) {
+                //out.println(userInput);
+                System.out.println("echo: " + userInput);
+            }
 
             //done
             System.out.println("s--");
