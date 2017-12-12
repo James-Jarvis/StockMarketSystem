@@ -1,26 +1,33 @@
+import sun.awt.TracedEventQueue;
+
 public class Facade {
 
-    public Stock[] last5Stock;
+    public String[][] last5Stock;
     public String userName;
 
     private int port;
     private String IP;
 
+    boolean running;
+
     //CONSTRUCTOR
     public Facade (int conPort, String conIP) {
         IP = conIP;
         port = conPort;
+        running = false;
     }
 
     //userName - pass in the user name you want to register
     //returns if the register was successful or not
     public boolean register (String userName) {
+        running = true;
 
         Register reg = new Register(IP, port, userName);
         Thread t = new Thread(reg);
 
         t.run();
 
+        running = false;
         return reg.successful;
 
     }
@@ -51,8 +58,21 @@ public class Facade {
 
     }
 
+    public String[][] getStocks () {
+        running = true;
+        GetStocks gs = new GetStocks(IP, port, userName);
 
+        Thread t = new Thread(gs);
+        t.run();
 
+        while(gs.running) {
 
+        }
+
+        last5Stock = gs.stocksIndex;
+
+        running = false;
+        return last5Stock;
+    }
 
 }

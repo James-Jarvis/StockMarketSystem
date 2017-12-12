@@ -13,13 +13,19 @@ public class Gen {
         //Connect con = new Connect();
         //Register reg = new Register("MYUSER");
 
-        GetStocks fetch = new GetStocks("UserID");
-        //GetStocks fetch = new GetStocks("192.168.0.2", 4200, "MYUSER");
+        Facade f = new Facade(3, "localhost");
+        f.register("AnthonyKerr");
+        f.getStocks();
 
-        //Thread sendThread = new Thread(con);
-        Thread fetchThread = new Thread(fetch);
+        while (f.last5Stock==null) {
+        }
 
-        fetchThread.start();
+        for (int row = 0; row < 10; row++) {
+            for (int col = 0; col < 3; col++) {
+                System.out.print(f.last5Stock[row][col] + ", ");
+            }
+            System.out.println();
+        }
 
     }
 }

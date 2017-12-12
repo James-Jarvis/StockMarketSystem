@@ -10,7 +10,8 @@ public class GetStocks extends Thread {
     String hostname;
     String userID;
     boolean successful;
-    Stock[] stocksIndex = new Stock[10];
+    boolean running = false;
+    String[][] stocksIndex = new String[10][3];
 
     public GetStocks (String ip, int newPort, String username) {
         // Constructor
@@ -27,6 +28,7 @@ public class GetStocks extends Thread {
     }
 
     public void run(){
+        running = true;
         try {
             Socket ClientSocket;
             //connects to the socket
@@ -67,9 +69,21 @@ public class GetStocks extends Thread {
 
             //gets the return from the socket
             //String userInput;
+            int counter = 0;
             while ((userInput = in.readLine()) != null) {
                 //out.println(userInput);
                 System.out.println("echo: " + userInput);
+
+                if (userInput.startsWith("STK") && counter < 10) {
+
+                    String[] chunks = userInput.split(":");
+                    stocksIndex[counter][0] = chunks[1];
+                    stocksIndex[counter][1] = chunks[2];
+                    stocksIndex[counter][2] = chunks[3];
+
+                    counter++;
+                }
+
             }
 
             //done
@@ -78,5 +92,6 @@ public class GetStocks extends Thread {
         } catch(IOException e){
             System.out.println("***********Problem with socket: " + e);
         }
+        running = false;
     }
 }
